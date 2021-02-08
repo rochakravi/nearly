@@ -1,18 +1,9 @@
-import React from 'react'
-import { TextInput } from 'react-native-paper';
+import React from 'react';
+import {TextInput} from 'react-native-paper';
 
-import { AppRegistry } from 'react-native'
+const Input = ({label}) => {
+  const [text, setText] = React.useState('');
+  return <TextInput label={label} mode="outlined" placeholder="normal" />;
+};
 
-const Input =()=>{
-    const [text, setText] = React.useState('');
-    return (
-        <TextInput
-        label="Email"
-        value={text}
-        onChangeText={text => setText(text)}
-      /> 
-    )
-  
-}
-
-export default Input
+export default Input;
