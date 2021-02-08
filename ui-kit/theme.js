@@ -28,6 +28,7 @@ const theme = {
 
     white: '#FFFFFF',
     black: '#000000',
+    facebook:'#3E5D94'
   },
 };
 
