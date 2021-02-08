@@ -12,7 +12,7 @@ const Login = ({navigation}) => {
   return (
     <View style={styles.login}>
       <Title>Login/Sign Up</Title>
-      <Input />
+      <Input label="phone" />
       <NButton
         mode="contained"
         title="continue"
