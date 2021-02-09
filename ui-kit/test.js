@@ -1,6 +1,6 @@
 import React from 'react';
 import {AppRegistry} from 'react-native';
-import styled, {css} from '@emotion/native';
+import styled from 'styled-components';
 import theme from './theme';
 
 const Container = styled.View`
