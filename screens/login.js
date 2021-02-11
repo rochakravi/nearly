@@ -12,14 +12,16 @@ const Login = ({navigation}) => {
   return (
     <View style={styles.login}>
       <Title>Login/Sign Up</Title>
-      <Input label="phone" />
-      <NButton
-        mode="contained"
-        title="continue"
-        color={theme.colors.primary}
-        labelTextColor={theme.colors.white}
-        onPress={() => handler()}
-      />
+      <View style={{display: 'flex', justifyContent: 'space-between'}}>
+        <Input label="Enter Mobile Number/Email" />
+        <NButton
+          mode="contained"
+          title="continue"
+          color={theme.colors.primary}
+          labelTextColor={theme.colors.white}
+          onPress={() => handler()}
+        />
+      </View>
       <View style={styles.using}>
         <NButton
           icon="facebook"
@@ -51,6 +53,8 @@ export default Login;
 const styles = StyleSheet.create({
   login: {
     margin: 15,
+    display: 'flex',
+    justifyContent: 'space-between',
   },
   using: {
     display: 'flex',
